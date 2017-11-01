@@ -1,4 +1,20 @@
 <head></head>
 <body>
   <h1>My Todos</h1>
+  <ul id="todos"></ul>
+  <script>
+    const {ipcRenderer} = require('electron');
+    ipcRenderer.on('todo:add', (event, todo) => {
+      const li = document.createElement('li');
+      const text = document.createTextNode(todo);
+      li.appendChild(text);
+      document.querySelector('ul#todos').appendChild(li);
+    })
+    ipcRenderer.on('todo:clear', () => {
+      var ul = document.querySelector('ul#todos');
+      while (ul.firstChild) {
+        ul.removeChild(ul.firstChild);
+      }
+    });
+  </script>
 </body>

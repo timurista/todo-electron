@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "electron": "electron ."
+    "electron": "electron .",
+    "prod": "export NODE_ENV=\"production\" && electron ."
   },
   "repository": {
     "type": "git",
