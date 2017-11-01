@@ -1,0 +1,22 @@
+{
+  "name": "todo-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "electron": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timurista/todo-electron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timurista/todo-electron/issues"
+  },
+  "homepage": "https://github.com/timurista/todo-electron#readme",
+  "dependencies": {
+    "electron": "^1.7.9"
+  }
+}
